@@ -35,4 +35,6 @@
     --bg-color: #FFF1F7;
   }
 }
- 
+.theme__light .decor {
+    display: none;
+}
