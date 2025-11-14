@@ -8,4 +8,5 @@
   --header1-color: #db00ff;
   --header2-color: var(--accent-color);
   --header3-color: var(--background-color);
-  --is-light: visible;}
+  --is-light: visible;
+}
