@@ -1,33 +1,33 @@
+/*  Специально для светлой темы при наличии класса.
+  Здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
 :root.theme-light {
-  --button-color:#353430;
-  --border-button-color: #32312D66;
-  --angle-color: #FF8DCB;
-  --after-color: transparent;
-  --background-image: url(../images/cover-image-light.png);
-  --header__title-color: #FFC2E6;
-  --par-text-color: #353430;
-  --text-color: #353430;
-  --rec-color: transparent;
-  --bg-color: #FFF1F7;
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+    --text-color: #353430;
+    --brand-color: #ffc2e6;
+    --secondary-color: #ff8dcb;
+    --secondary-color-o-40: #ff8dcb40;
+    --accent-color: #ff8dcb;
+    --highlight-color: #353430;
+
+    --page-background-color: #fff1f7;
+    --page-background-image: url("../images/cover-image-light.png");
+
+    --rec-decor-visibility: hidden;
 }
 
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
 @media (prefers-color-scheme: light) {
-  :root {
-    --button-color:#353430;
-    --border-button-color: #32312D66;
-    --angle-color: #FF8DCB;
-    --after-color: transparent;
-    --background-image: url(../images/cover-image-light.png);
-    --header__title-color: #FFC2E6;
-    --par-text-color: #353430;
-    --text-color: #353430;
-    --rec-color: transparent;
-    --bg-color: #FFF1F7;
-  }
+    :root {
+        --text-color: #353430;
+        --brand-color: #ffc2e6;
+        --secondary-color: #ff8dcb;
+        --secondary-color-o-40: #ff8dcb40;
+        --accent-color: #ff8dcb;
+        --highlight-color: #353430;
+
+        --page-background-color: #fff1f7;
+        --page-background-image: url("../images/cover-image-light.png");
+
+        --rec-decor-visibility: hidden;
+    }
 }
