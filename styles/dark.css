@@ -1,32 +1,24 @@
+/*
+  Специально для тёмной темы при наличии класса,
+  здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
 :root.theme-dark {
-  --bg-main-color: #000028;
-  --bg-accent-color: #FF0070;
-  --main-text-color: #F1B2CE;
-  --accent-text-color: #000028;
-  --hover-opacity:#FF007066;
-  --decor-color:#FF0070;
-  --text-shadow:#DB00FF;
-  --bg-image: url(../images/cover-image-dark.png);
-}
+  --bg-picture: url(../images/cover-image-dark.png);
+  --accent-color: #ff0070;
+  --header-logo-color: #db00ff;
+  --header-text-color: #000028;
+  --text-color: #f1b2ce;
+  --subtitle-text-color: #ff0070;
+  --menu-button-color: #ff0070;
+  --title-text-color: var(--header-text-color);
+  --footer-logo-color: #db00ff;
+  --main-bg-color: #000028;
+  --hover-button-color: #ff007066;
+  --lines-color: #ff0070;
 
-.theme-dark .header-rec {
-  display: block;
-}
-
-@media (prefers-color-scheme: dark) {
-  
-  :root {
-    --bg-main-color: #000028;
-    --bg-accent-color: #FF0070;
-    --main-text-color: #F1B2CE;
-    --accent-text-color: #000028;
-    --hover-opacity:#FF007066;
-    --decor-color:#FF0070;
-    --text-shadow:#DB00FF;
-    --bg-image: url(../images/cover-image-dark.png);
-  }
-
-  .header-rec {
-    display: block;
+  .rec {
+    display: flex;
   }
 }
