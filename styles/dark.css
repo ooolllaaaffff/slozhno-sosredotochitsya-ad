@@ -1,24 +1,42 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+.theme-dark {
+    --size-main-text: 18px;
+    --color-main-background: #000028;
+    --color-main-text: #F1B2CE;
+    --color-h1-text: #DB00FF;
+    --color-h2-text: #FF0070;
+    --color-subtitle-text: #000028;
+    --color-highlite: #FF0070;
+    --color-focus: #FF0070;
+    --color-shadow: #FF0070;
+}
 
-:root.theme-dark {
-  --bg-picture: url(../images/cover-image-dark.png);
-  --accent-color: #ff0070;
-  --header-logo-color: #db00ff;
-  --header-text-color: #000028;
-  --text-color: #f1b2ce;
-  --subtitle-text-color: #ff0070;
-  --menu-button-color: #ff0070;
-  --title-text-color: var(--header-text-color);
-  --footer-logo-color: #db00ff;
-  --main-bg-color: #000028;
-  --hover-button-color: #ff007066;
-  --lines-color: #ff0070;
+.theme-dark .header {
+    background-color: var(--color-main-background);
+}
 
-  .rec {
-    display: flex;
-  }
+.theme-dark .rec-label {
+    color: var(--color-focus);
+}
+
+.theme-dark .rec-label::after {
+    background-color: var(--color-focus);
+    box-shadow: 0 0 4px 2px var(--color-focus);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not(.theme-light) {
+        --size-main-text: 18px;
+        --color-main-background: #000028;
+        --color-main-text: #F1B2CE;
+        --color-h1-text: #DB00FF;
+        --color-h2-text: #FF0070;
+        --color-subtitle-text: #000028;
+        --color-highlite: #FF0070;
+        --color-focus: #FF0070;
+        --color-shadow: #FF0070;
+    }
+
+    :root:not(.theme-light) .header {
+        background-color: var(--color-main-background);
+    }
 }
